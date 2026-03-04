@@ -49,3 +49,4 @@ export const tournamentData = [
     ]
   }
 ];
+export default tournamentData;
