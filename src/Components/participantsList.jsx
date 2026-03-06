@@ -1,4 +1,4 @@
-export default function ParticipantsList(participants){
+export default function ParticipantsList({participants}){
   return(
 
   ); 

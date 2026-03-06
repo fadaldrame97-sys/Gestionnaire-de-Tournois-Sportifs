@@ -1,3 +1,4 @@
+import ParticipantsList from "./participantsList";
 export default function PremierCarte({tournoi}){
 
 let statutClors="";
