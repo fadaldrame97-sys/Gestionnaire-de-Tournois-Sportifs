@@ -1,5 +1,5 @@
-import Notif from "./assets/Notif.png";
-import Fadal from "./assets/Fadal.jpg"
+import Notif from "../assets/Notif.png";
+import Fadal from "../assets/Fadal.jpg"
 import { Input } from "postcss";
 export default function Header(){
     return(

@@ -1,7 +1,7 @@
 
-import Header from "./Header";
-import { tournamentData } from "./tournament";
-import  PremierCarte from "./TournementONE";
+import Header from "./Components/Header";
+import { tournamentData } from "./data/tournament";
+import  PremierCarte from "./Components/TournementONE";
 
 function App() {
  
