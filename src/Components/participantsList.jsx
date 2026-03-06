@@ -1,3 +1,5 @@
-export default function ParticipantsList(){
-    
+export default function ParticipantsList(participants){
+  return(
+
+  ); 
 }
