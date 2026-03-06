@@ -6,9 +6,12 @@ let statutClors="";
    if(tournoi.status==="On Going"){
     statutClors="bg-green-100 text-green-600";
    }
-if(tournoi.status==="Upcoming"){
+else if(tournoi.status==="Upcoming"){
     statutClors="bg-blue-200 text-blue-600"; 
 }
+else{  statutClors="bg-yellow-200 text-black"; 
+} 
+
     return(
         <div className="bg-white text-black p-4 rounded-lg shadow-md">
           <h1 className="text-xl font-bold"> {tournoi.title}</h1>  
