@@ -21,7 +21,7 @@ else{  statutClors="bg-yellow-200 text-black";
            <span className={`px-3 py-1 rounded-full text-xs ${statutClors}`}>
         {tournoi.status}
       </span>
-      <ParticipantsList participants={tournoi.participants} />
+      {/* <ParticipantsList participants={tournoi.participants} /> */}
         </div>
     );
 }
