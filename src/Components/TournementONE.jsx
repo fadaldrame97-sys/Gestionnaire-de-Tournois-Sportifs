@@ -18,6 +18,7 @@ if(tournoi.status==="Upcoming"){
            <span className={`px-3 py-1 rounded-full text-xs ${statutClors}`}>
         {tournoi.status}
       </span>
+      <ParticipantsList participants={tournoi.participants} />
         </div>
     );
 }
