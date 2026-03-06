@@ -21,7 +21,10 @@ function App() {
         ))}
       </div>
 <BrowserRouter>
-  
+  <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/tournament/:id" element={<Details/>}/>
+  </Routes>
 </BrowserRouter>
    </div>
 
