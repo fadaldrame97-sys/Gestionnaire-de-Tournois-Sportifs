@@ -20,9 +20,11 @@ function App() {
           />
         ))}
       </div>
-
+<BrowserRouter>
+  
+</BrowserRouter>
    </div>
-   
+
   )
 }
 
