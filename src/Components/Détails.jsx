@@ -7,7 +7,7 @@ export default function Details(){
 
   const { id } = useParams();
 
-  const tournoi = tournamentData.find(t => t.id === Number(id));
+  const tournoi = tournamentData.find(t => t.id === id);
 
   return (
     <div>
