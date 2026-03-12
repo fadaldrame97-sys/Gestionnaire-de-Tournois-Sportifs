@@ -10,6 +10,8 @@ export const tournamentData = [
     location: "Badminton Hall 1",
     description: "Top players battle it out with skillful rallies and powerful smashes.",
     participantsCount: "24/32",
+     participantsNombre: 4,   // correspond au tableau participants
+    maxParticipants: 32,
     format: "Single Elimination",
     type: "Public",
     participants: [
@@ -28,6 +30,8 @@ export const tournamentData = [
     location: "Indoor Arena - Court A",
     description: "Intense games filled with teamwork, speed, and spectacular shots.",
     participantsCount: "8/12 Teams",
+     participantsNombre: 0,   // correspond au tableau participants
+    maxParticipants: 12,
     format: "Single Elimination",
     type: "Community",
     participants: []
@@ -41,6 +45,8 @@ export const tournamentData = [
     location: "Combat Zone Gym",
     description: "A dynamic boxing competition bringing together passionate fighters.",
     participantsCount: "10/16",
+    participantsNombre: 2,   
+    maxParticipants: 16,
     format: "Round Robin",
     type: "Pro",
     participants: [
