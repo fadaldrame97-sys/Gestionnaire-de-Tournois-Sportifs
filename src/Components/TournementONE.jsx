@@ -1,5 +1,6 @@
 import ParticipantsList from "./participantsList";
 import Badg from "./Badg";
+import Inscrire from "./inscription";
 export default function PremierCarte({tournoi}){
 
 
@@ -13,9 +14,11 @@ export default function PremierCarte({tournoi}){
           
       {/* <ParticipantsList participants={tournoi.participants} /> */}
 
-
+     <Inscrire/>
 
   <Badg status={tournoi.status} />
+
+
         </div>
     );
 }
