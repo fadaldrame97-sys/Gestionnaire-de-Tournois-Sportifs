@@ -8,7 +8,15 @@ export default function Inscrire(){
             setInscrire(false);
         } else { setInscrire(true)}
      }
-    return(
+
+     let textButton;
+
+     if (inscrit){
+        textButton="Se désinscrire";
+       
+     } else{ textButton="S'incrire"}
+    return(  
+        <button onClick={Substract}>{textButton}</button>
 
     )
 }
