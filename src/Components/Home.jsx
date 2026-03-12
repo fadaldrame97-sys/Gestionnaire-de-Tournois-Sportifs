@@ -8,9 +8,9 @@ export default function Home(){
          <Header/>
          <div className="p-6 grid grid-cols-3 gap-2">
          {tournamentData.map((tournoi)=>(
-             <Link key={tournoi.id} to={`/tournament/${tournoi.id}`}>
+            
             <PremierCarte tournoi={tournoi} />
-          </Link>
+          
          ))}
 
          </div>

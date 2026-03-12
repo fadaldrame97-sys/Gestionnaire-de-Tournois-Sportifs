@@ -1,13 +1,27 @@
 import { useState } from "react"
-export default function Inscrire(){
+export default function Inscrire({Ajouter,Retire}){
 
      const [inscrit, setInscrire] =useState(false)
 
-     function Substract(){
+     function Substract(event){
+          event.stopPropagation();
         if(inscrit){
             setInscrire(false);
-        } else { setInscrire(true)}
+          
+         if (Retire !== undefined && Retire !== null) {
+    Retire();
+            
+            }
+        }
+         else {
+             setInscrire(true)
+               if (Ajouter !== undefined && Ajouter !== null) {
+    Ajouter();
+        }
+
+            
      }
+    }
 
      let textButton;
 
