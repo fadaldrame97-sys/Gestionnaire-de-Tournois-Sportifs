@@ -13,6 +13,7 @@ export default function PremierCarte({tournoi}){
           <p> Date:{tournoi.date}</p>
           <p>Sport:{tournoi.sport}</p>
           <p>Status:{tournoi.status}</p>
+         <p>Participants : {NbPlacesActuels} / {tournoi.maxParticipants}</p>
           
       {/* <ParticipantsList participants={tournoi.participants} /> */}
 
