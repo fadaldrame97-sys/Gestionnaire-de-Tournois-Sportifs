@@ -10,7 +10,7 @@ export const tournamentData = [
     location: "Badminton Hall 1",
     description: "Top players battle it out with skillful rallies and powerful smashes.",
     participantsCount: "24/32",
-     participantsNombre: 4,   // correspond au tableau participants
+     participantsNombre: 4,   
     maxParticipants: 32,
     format: "Single Elimination",
     type: "Public",

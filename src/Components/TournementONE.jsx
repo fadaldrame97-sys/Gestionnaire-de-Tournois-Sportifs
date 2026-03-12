@@ -1,8 +1,10 @@
 import ParticipantsList from "./participantsList";
 import Badg from "./Badg";
 import Inscrire from "./inscription";
+import { useState } from "react";
 export default function PremierCarte({tournoi}){
-
+ 
+    const [NbPlacesActuels, setNbPlacesActuels] = useState(tournoi.participantsNombre);
 
 
     return(
