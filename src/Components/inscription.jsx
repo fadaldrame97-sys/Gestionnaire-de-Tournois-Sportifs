@@ -31,6 +31,10 @@ export default function Inscrire({Ajouter,Retire}){
      } else{ textButton="S'incrire"}
     return(  
         <button onClick={Substract} className="bg-green-500 shadow-2xl rounded-lg py-2 ">{textButton}</button>
+        
+
+
+        
 
     )
 }
