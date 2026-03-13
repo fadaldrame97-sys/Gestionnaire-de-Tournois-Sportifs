@@ -1,30 +1,31 @@
 import { useState } from "react";
-export default function Formulaire(){
+export default function Formulaire({ ajouterParticipant }){
 
-    const [Nom, setNom]=useState("")
-    const [Equipe,setEquipe]=useState("")
-    const [Niveau,setNiveau]=useState("")
+    const [nom, setNom]=useState("")
+    const [equipe,setEquipe]=useState("")
+    const [niveau,setNiveau]=useState("")
 
 
     function Soumettre(e){
         e.preventDefault();
 
-        const nouveauParticipant= {
-            id: Date.now(),
-            name:Nom,
-            Equipe:Equipe,
-            Niveau:Niveau
-        };
-    }
-
-    function AjouterUnParticipant(){
-
-   setNom("");
+       const nouveauParticipant = {
+    id: Date.now(),
+    name: nom,
+    equipe: equipe,
+    niveau: niveau
+};
+  ajouterParticipant(nouveauParticipant);
+      setNom("");
    setEquipe("");
    setNiveau("");
+ }
+
+   
 
 
-    }
+
+ 
     return(
  <form onSubmit={Soumettre} className="mt-4 border p-4 rounded">
       <input 

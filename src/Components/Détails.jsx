@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "./Header";
 import { tournamentData } from "../data/tournament";
@@ -7,7 +8,11 @@ export default function Details() {
 
   const { id } = useParams();
   const tournoi = tournamentData.find(t => t.id === id);
+ const [participants, setParticipants] = useState(tournoi.participants);
 
+  function ajouterParticipant(nouveauParticipant) {
+    setParticipants([...participants, nouveauParticipant]);
+  }
   if (!tournoi) {
     return <p className="p-6 text-center">Tournoi introuvable</p>;
   }
@@ -81,6 +86,7 @@ export default function Details() {
         {participantsContent}
 
       </div>
+     <Formulaire ajouterParticipant={ajouterParticipant} />
 
     </div>
   );
